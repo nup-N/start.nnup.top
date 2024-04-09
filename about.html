@@ -83,6 +83,22 @@
                                 </div>
                             </div>
                         </div>
+                            <!--gitalk-->
+                        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css"> 
+                        <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script> 
+                        <div id="gitalk-container"></div>
+                        <script type="text/javascript">
+                            var gitalk = new Gitalk({
+                                clientID: '3e99b98dfe0131518162',
+                                clientSecret: '05933a21d61ea915f0b46e2114502e0824a6659a',
+                                repo: 'gitalk-repo',
+                                owner: 'Nnup-wang',
+                                admin: ['Nnup-wang'],
+                                id: 'URL navigation Gitalk',
+                                distractionFreeMode: true
+                                });
+                                gitalk.render('gitalk-container');
+                        </script>
                     </div>
                 </div>
             </div>
@@ -119,25 +135,6 @@
     <!-- JavaScripts initializations and stuff -->
     <script src="assets/js/xenon-custom.js"></script>
     <textarea tabindex="-1" style="position: absolute; top: -999px; left: 0px; right: auto; bottom: auto; border: 0px; padding: 0px; box-sizing: content-box; word-wrap: break-word; overflow: hidden; transition: none; height: 0px !important; min-height: 0px !important; font-family: Arimo, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 400; font-style: normal; letter-spacing: 0px; text-transform: none; word-spacing: 0px; text-indent: 0px; line-height: 18.5714px; width: 53px;" class="autosizejs" id="autosizejs"></textarea>
-
-    <!--gitalk-->
-    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css"> 
-    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script> 
-
-    <div id="gitalk-container"></div>
-    <script type="text/javascript">
-        var gitalk = new Gitalk({
-            clientID: '3e99b98dfe0131518162}',
-            clientSecret: '05933a21d61ea915f0b46e2114502e0824a6659a',
-            repo: 'gitalk-repo',
-            owner: 'Nnup-wang',
-            admin: ['Nnup-wang'],
-            id: 'URL navigation Gitalk',
-            distractionFreeMode: true
-            });
-            gitalk.render('gitalk-container');
-    </script>
-
 
 </body>
 </html>
