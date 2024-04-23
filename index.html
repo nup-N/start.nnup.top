@@ -2,13 +2,14 @@
 <html lang="zh">
 
 <head>
+    <title>Nnupの网址导航</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Nnup" />
-    <title>Nnupの网址导航</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nnup">
     <meta name="keywords" content="nnup，Nnup.xyz,Nnup.fun,网址导航">
     <meta name="description" content="Nnupの网址导航，不定时更新分享资源工具类自用网站">
+
     <link rel="shortcut icon" href="../assets/images/favicon.png">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Arimo:400,700,400italic">
     <link rel="stylesheet" href="../assets/css/fonts/lineicons/lineicons.css">
@@ -18,7 +19,17 @@
     <link rel="stylesheet" href="../assets/css/xenon-components.css">
     <link rel="stylesheet" href="../assets/css/xenon-skins.css">
     <link rel="stylesheet" href="../assets/css/nav.css">
+
     <script src="../assets/js/jquery-1.11.1.min.js"></script>
+    <script src="../assets/js/move.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/TweenMax.min.js"></script>
+    <script src="../assets/js/resizeable.js"></script>
+    <script src="../assets/js/joinable.js"></script>
+    <script src="../assets/js/xenon-api.js"></script>
+    <script src="../assets/js/xenon-toggles.js"></script>
+    <script src="../assets/js/xenon-custom.js"></script>
+    <script src="../assets/js/lozad.js"></script>
 </head>
 
 <body class="page-body">
@@ -43,7 +54,7 @@
                 <ul id="main-menu" class="main-menu">
                     <li>
                         <a href="#常用推荐" class="smooth">
-                            <i class="lni lni-star-fill"></i>   <!--属于Linecons图标集的一部分。由Linecons图标集提供的CSS样式或JavaScript驱动-->
+                            <i class="lni lni-star-fill"></i>
                             <span class="title">常用推荐</span>
                         </a>
                     </li>
@@ -642,78 +653,6 @@
             </footer>
         </div>
     </div>
-    <!-- 锚点平滑移动 -->
-    <script type="text/javascript">
-    $(document).ready(function() {
-         //img lazy loaded
-         const observer = lozad();
-         observer.observe();
 
-        $(document).on('click', '.has-sub', function(){
-            var _this = $(this)
-            if(!$(this).hasClass('expanded')) {
-               setTimeout(function(){
-                    _this.find('ul').attr("style","")
-               }, 300);
-              
-            } else {
-                $('.has-sub ul').each(function(id,ele){
-                    var _that = $(this)
-                    if(_this.find('ul')[0] != ele) {
-                        setTimeout(function(){
-                            _that.attr("style","")
-                        }, 300);
-                    }
-                })
-            }
-        })
-        $('.user-info-menu .hidden-sm').click(function(){
-            if($('.sidebar-menu').hasClass('collapsed')) {
-                $('.has-sub.expanded > ul').attr("style","")
-            } else {
-                $('.has-sub.expanded > ul').show()
-            }
-        })
-        $("#main-menu li ul li").click(function() {
-            $(this).siblings('li').removeClass('active'); // 删除其他兄弟元素的样式
-            $(this).addClass('active'); // 添加当前元素的样式
-        });
-        $("a.smooth").click(function(ev) {
-            ev.preventDefault();
-
-            public_vars.$mainMenu.add(public_vars.$sidebarProfile).toggleClass('mobile-is-visible');
-            ps_destroy();
-            $("html, body").animate({
-                scrollTop: $($(this).attr("href")).offset().top - 30
-            }, {
-                duration: 500,
-                easing: "swing"
-            });
-        });
-        return false;
-    });
-
-    var href = "";
-    var pos = 0;
-    $("a.smooth").click(function(e) {
-        $("#main-menu li").each(function() {
-            $(this).removeClass("active");
-        });
-        $(this).parent("li").addClass("active");
-        e.preventDefault();
-        href = $(this).attr("href");
-        pos = $(href).position().top - 30;
-    });
-    </script>
-    <!-- Bottom Scripts -->
-    <script src="../assets/js/bootstrap.min.js"></script>
-    <script src="../assets/js/TweenMax.min.js"></script>
-    <script src="../assets/js/resizeable.js"></script>
-    <script src="../assets/js/joinable.js"></script>
-    <script src="../assets/js/xenon-api.js"></script>
-    <script src="../assets/js/xenon-toggles.js"></script>
-    <!-- JavaScripts initializations and stuff -->
-    <script src="../assets/js/xenon-custom.js"></script>
-    <script src="../assets/js/lozad.js"></script>
 </body>
 </html>
