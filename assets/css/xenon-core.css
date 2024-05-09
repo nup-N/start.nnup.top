@@ -2302,7 +2302,11 @@ body.chat-open .user-info-navbar a[data-toggle=chat] {
 }
 
 .user-info-navbar .user-info-menu li a img {
-    line-height: 1
+    line-height: 1;
+    position: absolute;
+    top: 55%;
+    transform: translateY(-45%);
+    right: 20px;
 }
 
 .user-info-navbar .user-info-menu>li {
@@ -3933,8 +3937,8 @@ body.chat-open #chat {
     }
     .page-container .sidebar-menu .sidebar-menu-inner .logo-env {
         margin-bottom: 0;
-        padding-top: 20px;
-        padding-bottom: 20px
+        padding-top: 12px;
+        padding-bottom: 12px
     }
     .page-container .sidebar-menu .sidebar-menu-inner .logo-env .mobile-menu-toggle {
         float: right
@@ -3950,7 +3954,7 @@ body.chat-open #chat {
         line-height: 1;
         font-size: 18px;
         position: relative;
-        top: 1px
+        top: 12px
     }
     .page-container .sidebar-menu .sidebar-menu-inner .logo-env .mobile-menu-toggle a:hover,
     .page-container .sidebar-menu .sidebar-menu-inner .logo-env .mobile-menu-toggle a:active,
@@ -7523,7 +7527,8 @@ label.radio-inline input[type=radio] {
 }
 
 nav.navbar {
-    border: 0
+    border: 0;
+    position: relative;
 }
 
 nav.navbar form>.btn {
