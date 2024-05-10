@@ -97,7 +97,7 @@
 .set-check{margin-top:3px;font-size:9pt}.set-check label{margin-left:3px}
 .set-check input,.set-check label{opacity:0;transition:all .3s ease}
 .search-type li{list-style:none;display:inline-block}
-@media screen and (max-width:767px){#search{margin:25px auto 15px}
+@media screen and (max-width:767px){#search{margin:50px auto 15px}
 .s-type-list label{padding:5px 0}
 .search-type{overflow:scroll}
 .search-list{height:30px;overflow-y:hidden;overflow-x:scroll;white-space:nowrap}
