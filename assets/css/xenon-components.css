@@ -3361,7 +3361,9 @@ button.toast-close-button {
     cursor: pointer;
     background: 0 0;
     border: 0;
-    -webkit-appearance: none
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 .toast-top-full-width {

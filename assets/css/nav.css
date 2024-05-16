@@ -102,3 +102,29 @@
 .search-type{overflow:scroll}
 .search-list{height:30px;overflow-y:hidden;overflow-x:scroll;white-space:nowrap}
 }
+
+#autosizejs {
+    position: absolute; 
+    top: -999px; 
+    left: 0px; 
+    right: auto; 
+    bottom: auto; 
+    border: 0px; 
+    padding: 0px; 
+    box-sizing: content-box; 
+    word-wrap: break-word; 
+    overflow: hidden; 
+    transition: none; 
+    height: 0px !important; 
+    min-height: 0px !important; 
+    font-family: Arimo, "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    font-size: 13px; 
+    font-weight: 400; 
+    font-style: normal;
+    letter-spacing: 0px; 
+    text-transform: none; 
+    word-spacing: 0px; 
+    text-indent: 0px; 
+    line-height: 18.5714px; 
+    width: 53px;
+}
